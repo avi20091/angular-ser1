@@ -1,0 +1,18 @@
+<table border="1" cellspacing="10px" cellpadding="10px"  align="center" style="text-align:center;font-size:30px;">
+  <thead style="background:gray;">
+    <tr>
+      <th>Name</th>
+      <th>Capital</th>
+      <th>Region</th>
+      <th>Flag</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let x of result">
+      <td>{{x.name}}</td>
+      <td>{{x.capital}}</td>
+      <td>{{x.region}}</td>
+      <td><img width="100px" src="{{x.flag}}"></td>
+    </tr>
+  </tbody>
+</table>
